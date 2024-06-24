@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+body {
+    overflow: hidden;
+    /*background: rgba(0, 0, 0, 0.562);*/
+}
+.animateOpacityOn {
+    opacity: 0;
+    animation: open 1s;
+    animation-fill-mode: forwards;
+}  
+.car-hud {
+    position: absolute;
+    right: 1vw;
+    bottom: 0;
+    width: 18vw;
+    text-align: center;
+    transform: scale(.86);
+}
+.car-hud .speed{
+    width: 15.5vw;
+    height: 15.5vw;
+}
+.car-hud .engine{
+    width: 3.5vw;
+    height: 17.7vw;
+    margin: 0 -2.3vw;
+    transform: rotate(0deg);
+}
+.car-hud .fuel{
+    width: 3.5vw;
+    height: 17.7vw;
+    margin: 0 -2.3vw;
+    transform: rotate(161deg);
+}
+.car-hud .speed-info {
+    margin: 0 0 -12.5vw 0;
+    font-family: Proxima Nova;
+    font-weight: 500;
+    color: white;
+}
+.car-hud .speed-info .info {
+    line-height: 1.8vw;
+}
+.car-hud .speed-info .info p:first-child{
+    font-size: 2.3vw;
+}
+.car-hud .speed-info .info p:last-child{
+    font-size: .8vw;
+    opacity: .4;
+}
+.car-hud .speed-info .info-car {
+    display: flex;
+    justify-content: center;
+}
+.car-hud .speed-info .info-car .bulb{
+    margin: 0 .5vw;
+}
+.car-hud .speed-info .info-car .bulb svg{
+    width: 1.3vw;
+    height: 1.6vw;
+}
+
+.car-hud .engine-icon {
+    width: 1.6vw;
+    height: 1.6vw;
+    position: absolute;
+    bottom: 1.3vw;
+}
+.car-hud .fuel-icon {
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    bottom: 1vw;
+}
+  
+@keyframes open {100% {opacity: 1; } }

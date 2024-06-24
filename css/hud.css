@@ -1,0 +1,228 @@
+body {
+    /* background: #777; */
+    font-family: "Proxima Nova";
+    letter-spacing: -0.5px;
+    /*background: url(../img/background_2.png)*/
+}
+
+.box {
+    float: right;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px;
+    margin-top: -30px;
+}
+
+.block {
+    display: block;
+}
+
+.fist {
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_fist {
+    padding-right: 20px;
+}
+
+.progresss {
+    padding-left: 65px;
+}
+ 
+@keyframes progress_bar {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -40px 0;
+    }
+}
+  
+.progress-bar
+{
+   transition: width 1s linear;
+}
+  
+.progress-bar:after
+{
+   animation: progress_bar 0.8s linear infinite;
+}
+
+progress {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    height: 5px;
+    border-radius: 10px;
+    width: 120px;
+    /* box-shadow: 1px 1px 11px #ccc; */
+}
+
+progress::-webkit-progress-bar {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #f04245;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.img_health {
+    background: #f04245;
+    background-image: url(../images/health.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.img_needs {
+    background: #fbad5e;
+    background-image: url(../images/armour.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.img_armour {
+    background: #C9C0BB;
+    background-image: url(../images/armour.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.img_ruble {
+    background: #66cc00;
+    background-image: url(../images/ruble.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.img_logo {
+    /* background: #66ccff; */
+    background-image: url(../images/hud_fon.png);
+    background-repeat: no-repeat;
+    background-size: 305px;
+    background-position: center;
+    width: 310px;
+    height: 210px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.img_bank {
+    background: #66ccff;
+    background-image: url(../images/bank.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.img_weapon {
+    margin-top: 40px;
+    position: absolute;
+    background-image: url(../images/0.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+    /* padding: 8px; */
+    right: 225px;
+}
+
+.arm::-webkit-progress-value {
+    background-color: #fff;
+}
+
+.need::-webkit-progress-value {
+    background-color: #fbad5e;
+}
+
+
+.money2 {
+    position: absolute;
+    text-align: right;
+    margin-left: 155px;
+    margin-top: 157px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 11px #888;
+}
+
+.prog {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 185px;
+}
+
+.money {
+    position: absolute;
+    text-align: right;
+
+    margin-left: 155px;
+    margin-top: 133px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 11px #888;
+}
+
+.logotype {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 14pt;
+    letter-spacing: -0.5px;
+    margin-left: 60px;
+}
+
+.date_time {
+    margin-top: 5px;
+    font-weight: 300;
+    margin-left: 88px;
+    color: #fff;
+    font-size: 14px;
+}
